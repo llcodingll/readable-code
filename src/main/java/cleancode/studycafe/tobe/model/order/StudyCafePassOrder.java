@@ -15,6 +15,7 @@ public class StudyCafePassOrder {
     }
 
     public static StudyCafePassOrder of(StudyCafeSeatPass seatPass, StudyCafeLockerPass lockerPass) {
+        if (seatPass == null) throw new NullPointerException("seatPass is null");
         return new StudyCafePassOrder(seatPass, lockerPass);
     }
 

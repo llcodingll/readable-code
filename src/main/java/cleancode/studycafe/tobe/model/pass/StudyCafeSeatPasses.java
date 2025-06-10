@@ -11,6 +11,7 @@ public class StudyCafeSeatPasses {
     }
 
     public static StudyCafeSeatPasses of(List<StudyCafeSeatPass> passes) {
+        if (passes == null) throw new NullPointerException("passes is null");
         return new StudyCafeSeatPasses(passes);
     }
 
